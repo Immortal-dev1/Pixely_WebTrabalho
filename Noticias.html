@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-bs-theme="dark">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Pixely — Notícias">
+    <title>Pixely - Notícias</title>
+    <meta name="theme-color" content="#0e0e11">
+    <link rel="icon" href="img/site_icon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Press+Start+2P&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Global -->
+    <link rel="stylesheet" href="css/Funcionalidades_unicas.css">
+
+    <style>
+        .link-noticia {
+            transition: color 0.2s ease;
+        }
+
+        .link-noticia:hover {
+            color: var(--bs-primary);
+        }
+
+        .jogo {
+            transition: background-color 0.2s ease;
+        }
+    </style>
+
+</head>
+
+<body style="--bg-pagina: url('https://cdn.cloudflare.steamstatic.com/steam/apps/2358720/library_hero.jpg')"
+    class="text-body d-flex flex-column min-vh-100"> <!-- background -->
+
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg nav-pixely px-3">
+            <div class="container-fluid">
+
+                <a class="icone-rede d-flex align-items-center gap-2" href="TelaPrincipal.html">
+                    <img src="img/site_icon.png" alt="Ícone do Pixely" class="logo-pixely">
+                    <img src="img/text_icon.png" alt="Pixely" class="logo-pixely">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
+                    aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+
+                    <ul class="navbar-nav me-auto mt-3 mt-lg-0 ms-lg-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="TelaPrincipal.html">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="Noticias.html" aria-current="page">Notícias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Explorar.html">Explorar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Eventos.html">Eventos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Perfil.html">Perfil</a>
+                        </li>
+                    </ul>
+
+                    <div class="d-flex align-items-center gap-3 my-3 my-lg-0">
+                        <form role="search" action="" method="get" class="flex-grow-1">
+                            <div class="input-group busca rounded-pill overflow-hidden">
+                                <span class="input-group-text"><i class="bi bi-search" aria-hidden="true"></i></span>
+                                <input class="form-control" type="search" name="pesquisa" placeholder="Navegar"
+                                    aria-label="Navegar">
+                            </div>
+                        </form>
+
+                        <div class="dropdown d-none d-lg-block">
+                            <a href="#" class="d-block" data-bs-toggle="dropdown" aria-expanded="false"
+                                aria-label="Menu do usuário">
+                                <img src="img/perfil.png" alt="" width="40" height="40"
+                                    class="icone-rede rounded-circle">
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end shadow">
+                                <li><a class="dropdown-item" href="Perfil.html"><i class="bi bi-person me-2"></i>Meu
+                                        perfil</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="Logar.html"><i
+                                            class="bi bi-box-arrow-right me-2"></i>Sair</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container conteudo flex-grow-1 py-5">
+
+        <h1 class="titulo-pixel border-start border-3 border-primary ps-3 mb-5">Notícias</h1>
+
+        <section class="mb-5">
+            <h2 class="titulo-pixel mb-4">Destaque do Dia</h2>
+
+            <article class="row g-4 p-4 rounded-3 border border-secondary-subtle bg-body-tertiary align-items-center">
+                <div class="col-12 col-md-4 text-center">
+                    <img loading="lazy" decoding="async" class="img-fluid rounded-3 border border-secondary-subtle"
+                        src="https://store-images.s-microsoft.com/image/apps.65104.14157056169306105.30ae0432-c36b-42e7-9bbb-f85189243ca3.8e302653-b1b3-4ef9-b328-6a0822123e0c"
+                        alt="Resident Evil Requiem">
+                </div>
+                <div class="col-12 col-md-8">
+                    <p class="text-primary fw-semibold small mb-1">Destaque</p>
+                    <h3 class="h3 mb-2">Resident Evil Requiem já soma mais de 7 milhões de cópias vendidas</h3>
+                    <p class="text-body-secondary mb-3"><strong>Gênero:</strong> Survival Horror</p>
+                    <p class="texto-jogo text-body-secondary mb-4">
+                        Lançado em 27 de fevereiro de 2026 para PS5, Xbox Series X|S, PC e Nintendo Switch 2, Resident
+                        Evil
+                        Requiem é o nono jogo principal da franquia e coloca a analista do FBI Grace Ashcroft ao lado do
+                        veterano Leon S. Kennedy investigando mortes misteriosas ligadas a Raccoon City. O jogo vendeu 5
+                        milhões de cópias em apenas cinco dias e ultrapassou os 7 milhões em dois meses, tornando-se o
+                        lançamento mais rápido de toda a série.
+                    </p>
+                    <a class="btn btn-outline-primary rounded-pill btn-sm"
+                        href="https://en.wikipedia.org/wiki/Resident_Evil_Requiem" target="_blank"
+                        rel="noopener noreferrer">Leia a notícia completa »</a>
+                </div>
+            </article>
+        </section>
+
+        <section class="mb-5">
+            <h2 class="titulo-pixel mb-4">Notícias Relâmpago!!</h2>
+            <div class="p-3 rounded-3 border border-secondary-subtle bg-body-tertiary">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item bg-transparent text-white py-3">
+                        Rockstar adia GTA VI pela terceira vez; jogo agora chega em 19 de novembro de 2026 para PS5 e
+                        Xbox Series X|S —
+                        <a href="https://www.rockstargames.com/newswire/article/ak3ak31a49a221/grand-theft-auto-vi-is-now-set-to-launch-november-19-2026"
+                            target="_blank" rel="noopener noreferrer" class="text-primary text-decoration-none ms-1">ver
+                            mais »</a>
+                    </li>
+                    <li class="list-group-item bg-transparent text-white py-3">
+                        Resident Evil Veronica anunciado; aguardado remake de Code: Veronica chega em 2027 —
+                        <a href="https://www.gamespot.com/articles/resident-evil-code-veronica-remake-gets-first-reveal-at-summer-game-fest/"
+                            target="_blank" rel="noopener noreferrer" class="text-primary text-decoration-none ms-1">ver
+                            mais »</a>
+                    </li>
+                    <li class="list-group-item bg-transparent text-white py-3">
+                        Ocarina of Time renascerá! Remake do clássico chega para Nintendo Switch 2 ainda em 2026 —
+                        <a href="https://www.nintendo.com/us/whatsnew/nintendo-direct-unveils-new-games-and-updates-for-nintendo-switch-2-and-nintendo-switch-including-the-legend-of-zelda-ocarina-of-time-kingdom-hearts-iv-xenoblade-genesis-and-more/"
+                            target="_blank" rel="noopener noreferrer" class="text-primary text-decoration-none ms-1">ver
+                            mais »</a>
+                    </li>
+                    <li class="list-group-item bg-transparent text-white py-3">
+                        The Duskbloods é confirmado exclusivo do Switch 2, com teste fechado previsto para o verão —
+                        <a href="https://www.nintendo.com/us/whatsnew/nintendo-direct-unveils-new-games-and-updates-for-nintendo-switch-2-and-nintendo-switch-including-the-legend-of-zelda-ocarina-of-time-kingdom-hearts-iv-xenoblade-genesis-and-more/"
+                            target="_blank" rel="noopener noreferrer" class="text-primary text-decoration-none ms-1">ver
+                            mais »</a>
+                    </li>
+                    <li class="list-group-item bg-transparent text-white py-3">
+                        Alien: Isolation 2 ganha primeiro trailer e marca o retorno da série ao survival horror —
+                        <a href="https://store.steampowered.com/app/4665290/Alien_Isolation_2/" target="_blank"
+                            rel="noopener noreferrer" class="text-primary text-decoration-none ms-1">ver mais »</a>
+                    </li>
+                    <li class="list-group-item bg-transparent text-white py-3">
+                        Rumor: listagem vazada sugere que Metroid Ravenous está a caminho do Nintendo Switch 2 —
+                        <a href="https://nintendoeverything.com/rumor-metroid-ravenous-leaked-for-nintendo-switch-2/"
+                            target="_blank" rel="noopener noreferrer" class="text-primary text-decoration-none ms-1">ver
+                            mais »</a>
+                    </li>
+                    <li class="list-group-item bg-transparent text-white py-3">
+                        Valve confirma que o Steam Deck 2 segue em desenvolvimento, mas ainda sem data definida —
+                        <a href="https://www.tweaktown.com/news/112348/valve-offers-update-on-steam-deck-2-says-its-close-but-still-has-one-issue-to-solve/index.html"
+                            target="_blank" rel="noopener noreferrer" class="text-primary text-decoration-none ms-1">ver
+                            mais »</a>
+                    </li>
+                    <li class="list-group-item bg-transparent text-white py-3">
+                        Minecraft ultrapassa 350 milhões de cópias vendidas em todo o mundo —
+                        <a href="https://hosthavoc.com/blog/minecraft-statistics" target="_blank"
+                            rel="noopener noreferrer" class="text-primary text-decoration-none ms-1">ver mais »</a>
+                    </li>
+                    <li class="list-group-item bg-transparent text-white py-3">
+                        Summer Game Fest 2026: veja todos os anúncios e trailers do evento —
+                        <a href="https://br.ign.com/summer-game-fest" target="_blank" rel="noopener noreferrer"
+                            class="text-primary text-decoration-none ms-1">ver mais »</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="mb-5">
+            <h2 class="titulo-pixel mb-4">Últimas Notícias</h2>
+
+            <article class="jogo row g-4 py-4 border-bottom border-secondary-subtle">
+                <div class="col-12 col-sm-auto">
+                    <img loading="lazy" decoding="async"
+                        class="capa-jogo d-block mx-auto mx-sm-0 rounded-3 overflow-hidden border border-secondary-subtle"
+                        src="https://store-images.s-microsoft.com/image/apps.62049.14281521915701479.aa6203bb-c856-4d56-835e-5f43eeee4c4f.1aa05f5d-5e0b-4c6e-808f-292a0976696d"
+                        alt="Resident Evil Veronica" width="220">
+                </div>
+                <div class="col-12 col-sm">
+                    <h3 class="h4 mb-2">Resident Evil Veronica é anunciado no Summer Game Fest 2026</h3>
+                    <p class="small text-body-secondary mb-3"><strong>Publicado em:</strong> 05/06/2026 |
+                        <strong>Categoria:</strong> Anúncios
+                    </p>
+                    <p class="texto-jogo text-body-secondary mb-3">
+                        A Capcom confirmou durante o Summer Game Fest o remake de Resident Evil: Code Veronica, agora
+                        chamado apenas de Resident Evil Veronica. A história se passa três meses após o Incidente de
+                        Raccoon City e acompanha novamente Claire Redfield em busca do irmão Chris na ilha de Rockfort.
+                        O
+                        jogo é desenvolvido pela mesma equipe por trás dos remakes de Resident Evil 2 e Resident Evil 4,
+                        e
+                        chega em 2027 para PS5, Xbox Series X|S, Nintendo Switch 2 e PC.
+                    </p>
+                    <a class="link-noticia text-reset small"
+                        href="https://www.gamespot.com/articles/resident-evil-code-veronica-remake-gets-first-reveal-at-summer-game-fest/"
+                        target="_blank" rel="noopener noreferrer">Leia mais »</a>
+                </div>
+            </article>
+
+            <article class="jogo row g-4 py-4 border-bottom border-secondary-subtle">
+                <div class="col-12 col-sm-auto">
+                    <img loading="lazy" decoding="async"
+                        class="capa-jogo d-block mx-auto mx-sm-0 rounded-3 overflow-hidden border border-secondary-subtle"
+                        src="https://store-images.s-microsoft.com/image/apps.49736.14611435306665582.8e455bef-820f-4ee1-b08b-c63bb200c564.c8b20b24-9864-43b3-9ae3-2d972a7ade53"
+                        alt="Alien: Isolation 2" width="220">
+                </div>
+                <div class="col-12 col-sm">
+                    <h3 class="h4 mb-2">Alien: Isolation 2 é revelado com trailer sombrio na Creative Assembly</h3>
+                    <p class="small text-body-secondary mb-3"><strong>Publicado em:</strong> 05/06/2026 |
+                        <strong>Categoria:</strong> Anúncios
+                    </p>
+                    <p class="texto-jogo text-body-secondary mb-3">
+                        Um dos grandes anúncios do Summer Game Fest 2026, Alien: Isolation 2 é a sequência tão esperada
+                        do
+                        aclamado survival horror de 2014. Desenvolvido pela Creative Assembly, o jogo promete manter a
+                        tensão de fugir do Xenomorfo em vez de enfrentá-lo diretamente, com uma nova protagonista e
+                        cenários ainda mais claustrofóbicos.
+                    </p>
+                    <a class="link-noticia text-reset small"
+                        href="https://store.steampowered.com/app/4665290/Alien_Isolation_2/" target="_blank"
+                        rel="noopener noreferrer">Leia mais »</a>
+                </div>
+            </article>
+
+            <article class="jogo row g-4 py-4 border-bottom border-secondary-subtle">
+                <div class="col-12 col-sm-auto">
+                    <img loading="lazy" decoding="async"
+                        class="capa-jogo d-block mx-auto mx-sm-0 rounded-3 overflow-hidden border border-secondary-subtle"
+                        src="https://s2-techtudo.glbimg.com/iSACGnb2qaVzJyv0lpMA-uk2AK8=/0x0:1440x2560/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2025/5/1/RvDHm1QOaYGkr67qdRiw/gta-6-wallpaper-smartphone-blaue-gtaforums.jpg"
+                        alt="Grand Theft Auto VI" width="220">
+                </div>
+                <div class="col-12 col-sm">
+                    <h3 class="h4 mb-2">Rockstar adia GTA VI pela terceira vez</h3>
+                    <p class="small text-body-secondary mb-3"><strong>Publicado em:</strong> 01/07/2026 |
+                        <strong>Categoria:</strong> Mercado
+                    </p>
+                    <p class="texto-jogo text-body-secondary mb-3">
+                        Após dois adiamentos anteriores, a Rockstar Games anunciou que Grand Theft Auto VI agora chega
+                        em
+                        19 de novembro de 2026, exclusivo para PlayStation 5 e Xbox Series X|S — ainda sem versão para
+                        PC
+                        confirmada. A empresa afirmou que o tempo extra será usado para entregar o jogo "com o nível de
+                        polimento que os jogadores esperam e merecem".
+                    </p>
+                    <a class="link-noticia text-reset small"
+                        href="https://www.rockstargames.com/newswire/article/ak3ak31a49a221/grand-theft-auto-vi-is-now-set-to-launch-november-19-2026"
+                        target="_blank" rel="noopener noreferrer">Leia mais »</a>
+                </div>
+            </article>
+
+            <article class="jogo row g-4 py-4 border-bottom border-secondary-subtle">
+                <div class="col-12 col-sm-auto">
+                    <img loading="lazy" decoding="async"
+                        class="capa-jogo d-block mx-auto mx-sm-0 rounded-3 overflow-hidden border border-secondary-subtle"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv59e7YKSOH4S5eSQFFKVJSc6s5J6t8WOTKGSD7vmEIPMqXwOBvsKKHD2p&s=10"
+                        alt="The Duskbloods" width="220">
+                </div>
+                <div class="col-12 col-sm">
+                    <h3 class="h4 mb-2">FromSoftware confirma The Duskbloods como exclusivo do Nintendo Switch 2</h3>
+                    <p class="small text-body-secondary mb-3"><strong>Publicado em:</strong> Nintendo Direct 2026 |
+                        <strong>Categoria:</strong> Anúncios
+                    </p>
+                    <p class="texto-jogo text-body-secondary mb-3">
+                        Durante um Nintendo Direct, a FromSoftware detalhou The Duskbloods, novo jogo de ação
+                        multiplayer
+                        com temática vampiresca em que até oito jogadores lutam entre si e contra inimigos brutais em
+                        uma ambientação sombria de temática vampiresca. O
+                        título é exclusivo do Switch 2 e terá um teste de rede fechado ainda neste verão, antes do
+                        lançamento previsto para 2026.
+                    </p>
+                    <a class="link-noticia text-reset small"
+                        href="https://www.nintendo.com/us/whatsnew/nintendo-direct-unveils-new-games-and-updates-for-nintendo-switch-2-and-nintendo-switch-including-the-legend-of-zelda-ocarina-of-time-kingdom-hearts-iv-xenoblade-genesis-and-more/"
+                        target="_blank" rel="noopener noreferrer">Leia mais »</a>
+                </div>
+            </article>
+
+            <article class="jogo row g-4 py-4 border-bottom border-secondary-subtle">
+                <div class="col-12 col-sm-auto">
+                    <img loading="lazy" decoding="async"
+                        class="capa-jogo d-block mx-auto mx-sm-0 rounded-3 overflow-hidden border border-secondary-subtle"
+                        src="https://sm.ign.com/ign_br/news/v/valve-says/valve-says-it-has-a-pretty-good-idea-of-what-steam-deck-2-is_pmxm.jpg"
+                        alt="Steam Deck" width="220">
+                </div>
+                <div class="col-12 col-sm">
+                    <h3 class="h4 mb-2">Valve dá atualização sobre o Steam Deck 2, mas data ainda não foi fechada</h3>
+                    <p class="small text-body-secondary mb-3"><strong>Publicado em:</strong> 25/06/2026 |
+                        <strong>Categoria:</strong> Hardware
+                    </p>
+                    <p class="texto-jogo text-body-secondary mb-3">
+                        O engenheiro da Valve Pierre-Loup Griffais afirmou que a empresa está "cada vez mais perto" de
+                        finalizar o Steam Deck 2, mas que os chips disponíveis no mercado ainda não entregam o
+                        equilíbrio
+                        ideal entre desempenho e autonomia de bateria que a Valve considera necessário para um salto
+                        geracional de verdade.
+                    </p>
+                    <a class="link-noticia text-reset small"
+                        href="https://www.tweaktown.com/news/112348/valve-offers-update-on-steam-deck-2-says-its-close-but-still-has-one-issue-to-solve/index.html"
+                        target="_blank" rel="noopener noreferrer">Leia mais »</a>
+                </div>
+            </article>
+
+            <article class="jogo row g-4 py-4 border-bottom border-secondary-subtle">
+                <div class="col-12 col-sm-auto">
+                    <img loading="lazy" decoding="async"
+                        class="capa-jogo d-block mx-auto mx-sm-0 rounded-3 overflow-hidden border border-secondary-subtle"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbSSnQWMZG6zRidiXqpXCaRkzMJk8YisgqJrezqDev265MKI_pwIf9OgM&s=10"
+                        alt="Minecraft" width="220">
+                </div>
+                <div class="col-12 col-sm">
+                    <h3 class="h4 mb-2">Minecraft ultrapassa 350 milhões de cópias vendidas</h3>
+                    <p class="small text-body-secondary mb-3"><strong>Publicado em:</strong> Maio/2026 |
+                        <strong>Categoria:</strong> Mercado
+                    </p>
+                    <p class="texto-jogo text-body-secondary mb-3">
+                        Mais de 15 anos após seu lançamento, Minecraft segue como o jogo mais vendido da história, com
+                        mais de 350 milhões de cópias comercializadas e cerca de 212 milhões de jogadores ativos por mês
+                        em 2026. O sucesso do filme live-action lançado em 2025 ajudou a impulsionar as vendas em
+                        plataformas móveis e consoles.
+                    </p>
+                    <a class="link-noticia text-reset small" href="https://hosthavoc.com/blog/minecraft-statistics"
+                        target="_blank" rel="noopener noreferrer">Leia mais »</a>
+                </div>
+            </article>
+
+            <article class="jogo row g-4 py-4 border-bottom border-secondary-subtle">
+                <div class="col-12 col-sm-auto">
+                    <img loading="lazy" decoding="async"
+                        class="capa-jogo d-block mx-auto mx-sm-0 rounded-3 overflow-hidden border border-secondary-subtle"
+                        src="https://pbs.twimg.com/media/HMLky_oaMAAYWps.jpg" alt="Metroid Ravenous" width="220">
+                </div>
+                <div class="col-12 col-sm">
+                    <h3 class="h4 mb-2">Rumor: Metroid Ravenous pode ter vazado para o Nintendo Switch 2</h3>
+                    <p class="small text-body-secondary mb-3"><strong>Publicado em:</strong> 01/07/2026 |
+                        <strong>Categoria:</strong> Rumores
+                    </p>
+                    <p class="texto-jogo text-body-secondary mb-3">
+                        Uma listagem no sistema de classificação indicativa do Brasil sugere a existência de "Metroid
+                        Ravenous", possível novo título 2D da franquia. A página foi removida rapidamente, mas indicava
+                        2026 como ano de produção. Nem a Nintendo nem a MercurySteam, estúdio por trás de Metroid Dread,
+                        comentaram o assunto até o momento.
+                    </p>
+                    <a class="link-noticia text-reset small"
+                        href="https://nintendoeverything.com/rumor-metroid-ravenous-leaked-for-nintendo-switch-2/"
+                        target="_blank" rel="noopener noreferrer">Leia mais »</a>
+                </div>
+            </article>
+        </section>
+
+        <section class="mb-5">
+            <h2 class="titulo-pixel mb-4">Em Breve — Fique de Olho</h2>
+            <p class="text-body-secondary mb-4">Jogos que já têm data marcada ou devem sair muito em breve:</p>
+
+            <div class="row g-4">
+                <div class="col-12 col-md-6">
+                    <article class="p-4 rounded-3 border border-secondary-subtle bg-body-tertiary h-100">
+                        <h3 class="h4 mb-2">Splatoon Raiders</h3>
+                        <p class="small text-body-secondary mb-3"><strong>Lançamento:</strong> 23/07/2026 |
+                            <strong>Plataforma:</strong> Switch 2
+                        </p>
+                        <img loading="lazy" decoding="async"
+                            class="img-fluid rounded-3 mb-3 border border-secondary-subtle d-block mx-auto"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx9cN5B-yvqpYCTFLNu4h86gv2LGRQrfzbNDKZBIqCdYkT7_nUj_p5WKm4&s=10"
+                            alt="Splatoon Raiders">
+                        <p class="texto-jogo text-body-secondary mb-0">
+                            Spin-off single-player da série Splatoon, onde o jogador controla um mecânico que viaja
+                            pelas
+                            misteriosas Spirhalite Islands ao lado do trio Deep Cut, caçando tesouros e enfrentando
+                            hordas de
+                            Salmonids.
+                        </p>
+                    </article>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <article class="p-4 rounded-3 border border-secondary-subtle bg-body-tertiary h-100">
+                        <h3 class="h4 mb-2">The Duskbloods</h3>
+                        <p class="small text-body-secondary mb-3"><strong>Teste:</strong> Verão/2026 |
+                            <strong>Lançamento:</strong> 2026 | <strong>Plataforma:</strong> Switch 2
+                        </p>
+                        <img loading="lazy" decoding="async"
+                            class="img-fluid rounded-3 mb-3 border border-secondary-subtle d-block mx-auto"
+                            src="https://m.media-amazon.com/images/I/713CPXql4kL._AC_UF1000,1000_QL80_.jpg"
+                            alt="The Duskbloods">
+                        <p class="texto-jogo text-body-secondary mb-0">
+                            Novo jogo de ação multiplayer da FromSoftware, com até oito jogadores lutando entre si e
+                            contra
+                            inimigos brutais em uma ambientação sombria de temática vampiresca.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-5">
+            <h2 class="titulo-pixel mb-4">Quer outro tipo de notícia? Acesse pelos tópicos</h2>
+            <div class="d-flex flex-wrap gap-2">
+                <a href="#" class="btn btn-outline-secondary rounded-pill">Lançamentos</a>
+                <a href="#" class="btn btn-outline-secondary rounded-pill">Anúncios</a>
+                <a href="#" class="btn btn-outline-secondary rounded-pill">DLC &amp; Expansões</a>
+                <a href="#" class="btn btn-outline-secondary rounded-pill">Hardware</a>
+                <a href="#" class="btn btn-outline-secondary rounded-pill">Mercado &amp; Indústria</a>
+                <a href="#" class="btn btn-outline-secondary rounded-pill">Esports</a>
+                <a href="#" class="btn btn-outline-secondary rounded-pill">Reviews</a>
+                <a href="#" class="btn btn-outline-secondary rounded-pill">Comunidade</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="rodape-pixely">
+        <div class="container-fluid px-4 px-lg-5 pt-5 pb-3">
+
+            <div class="row g-4">
+
+                <section class="col-6 col-md-3">
+                    <h2 class="h6 fonte-display titulo-sublinhado text-uppercase fw-bold mb-3">Links Úteis</h2>
+                    <ul class="list-unstyled small mb-0">
+                        <li class="mb-2"><a href="Termos_Politica.html#sobre"
+                                class="link-light link-opacity-75 link-opacity-100-hover link-underline-opacity-0">Sobre
+                                Nós</a></li>
+                        <li class="mb-2"><a href="Termos_Politica.html#servicos"
+                                class="link-light link-opacity-75 link-opacity-100-hover link-underline-opacity-0">Nossos
+                                Serviços</a></li>
+                        <li class="mb-2"><a href="Termos_Politica.html#privacidade"
+                                class="link-light link-opacity-75 link-opacity-100-hover link-underline-opacity-0">Política
+                                de Privacidade</a></li>
+                        <li class="mb-2"><a href="Termos_Politica.html#termos"
+                                class="link-light link-opacity-75 link-opacity-100-hover link-underline-opacity-0">Termos
+                                de Uso</a></li>
+                        <li class="mb-2"><a href="mailto:pixely@gmail.com"
+                                class="link-light link-opacity-75 link-opacity-100-hover link-underline-opacity-0">Contato</a>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="col-6 col-md-3">
+                    <h2 class="h6 fonte-display titulo-sublinhado text-uppercase fw-bold mb-3">Redes Sociais</h2>
+                    <ul class="list-unstyled small mb-0">
+                        <li class="mb-2">
+                            <a href="#"
+                                class="d-flex align-items-center gap-2 link-light link-opacity-75 link-opacity-100-hover link-underline-opacity-0">
+                                <i class="bi bi-facebook" aria-hidden="true"></i> Facebook
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#"
+                                class="d-flex align-items-center gap-2 link-light link-opacity-75 link-opacity-100-hover link-underline-opacity-0">
+                                <i class="bi bi-instagram" aria-hidden="true"></i> Instagram
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#"
+                                class="d-flex align-items-center gap-2 link-light link-opacity-75 link-opacity-100-hover link-underline-opacity-0">
+                                <i class="bi bi-linkedin" aria-hidden="true"></i> LinkedIn
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="col-6 col-md-3">
+                    <h2 class="h6 fonte-display titulo-sublinhado text-uppercase fw-bold mb-3">Outras Plataformas</h2>
+                    <ul class="list-unstyled small mb-0">
+                        <li class="mb-2">
+                            <a href="#"
+                                class="d-flex align-items-center gap-2 link-light link-opacity-75 link-opacity-100-hover link-underline-opacity-0">
+                                <i class="bi bi-youtube" aria-hidden="true"></i> YouTube
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#"
+                                class="d-flex align-items-center gap-2 link-light link-opacity-75 link-opacity-100-hover link-underline-opacity-0">
+                                <i class="bi bi-twitch" aria-hidden="true"></i> Twitch
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#"
+                                class="d-flex align-items-center gap-2 link-light link-opacity-75 link-opacity-100-hover link-underline-opacity-0">
+                                <i class="bi bi-discord" aria-hidden="true"></i> Discord
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#"
+                                class="d-flex align-items-center gap-2 link-light link-opacity-75 link-opacity-100-hover link-underline-opacity-0">
+                                <i class="bi bi-github" aria-hidden="true"></i> GitHub
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="col-6 col-md-3">
+                    <h2 class="h6 fonte-display titulo-sublinhado text-uppercase fw-bold mb-3">Contato</h2>
+                    <address class="small mb-0">
+                        <p class="mb-2">Email: <a href="mailto:pixely@gmail.com"
+                                class="link-light link-opacity-75 link-opacity-100-hover link-underline-opacity-0">pixely@gmail.com</a>
+                        </p>
+                        <p class="mb-0">Telefone: (00) 0000-0000</p>
+                    </address>
+                </section>
+
+            </div>
+
+            <hr class="border-secondary mt-5">
+            <p class="text-center small text-body-secondary mb-0">&copy; 2026 Pixely. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/pixely.js" defer></script>
+</body>
+
+</html>

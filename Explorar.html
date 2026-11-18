@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-bs-theme="dark">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Pixely — Mercado">
+    <title>Pixely - Mercado</title>
+    <meta name="theme-color" content="#0e0e11">
+    <link rel="icon" href="img/site_icon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Press+Start+2P&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Global -->
+    <link rel="stylesheet" href="css/Funcionalidades_unicas.css">
+
+    <style>
+        .carousel-item img {
+            max-height: 380px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .carousel-item img:hover {
+            transform: scale(1.04);
+        }
+    </style>
+</head>
+
+<body style="--bg-pagina: url('https://cdn.cloudflare.steamstatic.com/steam/apps/553850/library_hero.jpg')"
+    class="text-body d-flex flex-column min-vh-100"> <!-- background -->
+
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg nav-pixely px-3">
+            <div class="container-fluid">
+
+                <a class="icone-rede d-flex align-items-center gap-2" href="TelaPrincipal.html">
+                    <img src="img/site_icon.png" alt="Ícone do Pixely" class="logo-pixely">
+                    <img src="img/text_icon.png" alt="Pixely" class="logo-pixely">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
+                    aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+
+                    <ul class="navbar-nav me-auto mt-3 mt-lg-0 ms-lg-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="TelaPrincipal.html">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Noticias.html">Notícias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="Explorar.html" aria-current="page">Explorar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Eventos.html">Eventos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Perfil.html">Perfil</a>
+                        </li>
+                    </ul>
+
+                    <div class="d-flex align-items-center gap-3 my-3 my-lg-0">
+                        <form role="search" action="" method="get" class="flex-grow-1">
+                            <div class="input-group busca rounded-pill overflow-hidden">
+                                <span class="input-group-text"><i class="bi bi-search" aria-hidden="true"></i></span>
+                                <input class="form-control" type="search" name="pesquisa" placeholder="Navegar"
+                                    aria-label="Navegar">
+                            </div>
+                        </form>
+
+                        <div class="dropdown d-none d-lg-block">
+                            <a href="#" class="d-block" data-bs-toggle="dropdown" aria-expanded="false"
+                                aria-label="Menu do usuário">
+                                <img src="img/perfil.png" alt="" width="40" height="40"
+                                    class="icone-rede rounded-circle">
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end shadow">
+                                <li><a class="dropdown-item" href="Perfil.html"><i class="bi bi-person me-2"></i>Meu
+                                        perfil</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="Logar.html"><i
+                                            class="bi bi-box-arrow-right me-2"></i>Sair</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container conteudo flex-grow-1 py-5">
+
+        <h2 class="titulo-pixel border-start border-3 border-primary ps-3 mb-5">Meus Jogos Favoritos</h2>
+        <div id="gameCarousel" class="carousel slide shadow rounded overflow-hidden" data-bs-ride="carousel"
+            data-bs-interval="4000">
+
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#gameCarousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#gameCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#gameCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+
+            <div class="carousel-inner p-4 bg-black bg-opacity-25">
+
+                <!-- 1 -->
+                <div class="carousel-item active">
+                    <div class="row row-cols-2 row-cols-md-3 row-cols-lg-6 g-3 justify-content-center">
+                        <div class="col text-center">
+                            <img loading="lazy" decoding="async"
+                                src="https://cdn.cloudflare.steamstatic.com/steam/apps/413150/library_600x900.jpg"
+                                alt="Stardew Valley" class="img-fluid rounded shadow">
+                        </div>
+                        <div class="col text-center">
+                            <img loading="lazy" decoding="async"
+                                src="https://cdn.cloudflare.steamstatic.com/steam/apps/367520/library_600x900.jpg"
+                                alt="Hollow Knight" class="img-fluid rounded shadow">
+                        </div>
+                        <div class="col text-center">
+                            <img loading="lazy" decoding="async"
+                                src="https://cdn.cloudflare.steamstatic.com/steam/apps/504230/library_600x900.jpg"
+                                alt="Celeste" class="img-fluid rounded shadow">
+                        </div>
+                        <div class="col text-center">
+                            <img loading="lazy" decoding="async"
+                                src="https://cdn.cloudflare.steamstatic.com/steam/apps/1145360/library_600x900.jpg"
+                                alt="Hades" class="img-fluid rounded shadow">
+                        </div>
+                        <div class="col text-center">
+                            <img loading="lazy" decoding="async"
+                                src="https://cdn.cloudflare.steamstatic.com/steam/apps/588650/library_600x900.jpg"
+                                alt="Dead Cells" class="img-fluid rounded shadow">
+                        </div>
+                        <div class="col text-center">
+                            <img loading="lazy" decoding="async"
+                                src="https://cdn.cloudflare.steamstatic.com/steam/apps/268910/library_600x900.jpg"
+                                alt="Cuphead" class="img-fluid rounded shadow">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2 -->
+                <div class="carousel-item">
+                    <div class="row row-cols-2 row-cols-md-3 row-cols-lg-6 g-3 justify-content-center">
+                        <div class="col text-center">
+                            <img loading="lazy" decoding="async"
+                                src="https://cdn.cloudflare.steamstatic.com/steam/apps/1091500/library_600x900.jpg"
+                                alt="Cyberpunk 2077" class="img-fluid rounded shadow">
+                        </div>
+                        <div class="col text-center">
+                            <img loading="lazy" decoding="async"
+                                src="https://cdn.cloudflare.steamstatic.com/steam/apps/1245620/library_600x900.jpg"
+                                alt="Elden Ring" class="img-fluid rounded shadow">
+                        </div>
+                        <div class="col text-center">
+                            <img loading="lazy" decoding="async"
+                                src="https://cdn.cloudflare.steamstatic.com/steam/apps/1086940/library_600x900.jpg"
+                                alt="Baldur's Gate 3" class="img-fluid rounded shadow">
+                        </div>
+                        <div class="col text-center">
+                            <img loading="lazy" decoding="async"
+                                src="https://cdn.cloudflare.steamstatic.com/steam/apps/553850/library_600x900.jpg"
+                                alt="The Witcher 3" class="img-fluid rounded shadow">
+                        </div>
+                        <div class="col text-center">
+                            <img loading="lazy" decoding="async"
+                                src="https://cdn.cloudflare.steamstatic.com/steam/apps/814380/library_600x900.jpg"
+                                alt="Sekiro" class="img-fluid rounded shadow">
+                        </div>
+                        <div class="col text-center">
+                            <img loading="lazy" decoding="async"
+                                src="https://cdn.cloudflare.steamstatic.com/steam/apps/632470/library_600x900.jpg"
+                                alt="Disco Elysium" class="img-fluid rounded shadow">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3 -->
+                <div class="carousel-item">
+                    <div class="row row-cols-2 row-cols-md-3 row-cols-lg-6 g-3 justify-content-center">
+                        <div class="col text-center">
+                            <img loading="lazy" decoding="async"
+                                src="https://cdn.cloudflare.steamstatic.com/steam/apps/105600/library_600x900.jpg"
+                                alt="Terraria" class="img-fluid rounded shadow">
+                        </div>
+                        <div class="col text-center">
+                            <img loading="lazy" decoding="async"
+                                src="https://cdn.cloudflare.steamstatic.com/steam/apps/391540/library_600x900.jpg"
+                                alt="Undertale" class="img-fluid rounded shadow">
+                        </div>
+                        <div class="col text-center">
+                            <img loading="lazy" decoding="async"
+                                src="https://cdn.cloudflare.steamstatic.com/steam/apps/261570/library_600x900.jpg"
+                                alt="Ori and the Blind Forest" class="img-fluid rounded shadow">
+                        </div>
+                        <div class="col text-center">
+                            <img loading="lazy" decoding="async"
+                                src="https://cdn.cloudflare.steamstatic.com/steam/apps/646570/library_600x900.jpg"
+                                alt="Slay the Spire" class="img-fluid rounded shadow">
+                        </div>
+                        <div class="col text-center">
+                            <img loading="lazy" decoding="async"
+                                src="https://cdn.cloudflare.steamstatic.com/steam/apps/304430/library_600x900.jpg"
+                                alt="INSIDE" class="img-fluid rounded shadow">
+                        </div>
+                        <div class="col text-center">
+                            <img loading="lazy" decoding="async"
+                                src="https://cdn.cloudflare.steamstatic.com/steam/apps/620/library_600x900.jpg"
+                                alt="Portal 2" class="img-fluid rounded shadow">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#gameCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#gameCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
+        </div>
+
+        <!-- Promoções em Destaque -->
+        <section class="mt-5">
+
+            <h2 class="titulo-pixel mb-4">Em promoção</h2>
+
+            <!-- 1º -->
+            <article class="jogo row g-4 py-4 border-bottom border-secondary-subtle">
+                <div class="col-12 col-sm-auto">
+                    <a href="https://store.steampowered.com/app/3240220/Grand_Theft_Auto_V_Enhanced/" target="_blank"
+                        class="capa-jogo d-block mx-auto mx-sm-0 rounded-3 overflow-hidden border border-secondary-subtle"
+                        rel="noopener noreferrer">
+                        <img loading="lazy" decoding="async"
+                            src="https://cdn.cloudflare.steamstatic.com/steam/apps/271590/library_600x900.jpg"
+                            class="img-fluid d-block" alt="Capa de GTA V">
+                    </a>
+                </div>
+
+                <div class="col-12 col-sm">
+                    <h3 class="h4 mb-3">GTA V</h3>
+
+                    <p class="texto-jogo text-body-secondary mb-3">Vivencie os sucessos de entretenimento Grand Theft
+                        Auto V e Grand Theft Auto Online —
+                        agora aprimorados para uma nova geração com visuais impressionantes, carregamento mais rápido,
+                        áudio 3D e muito mais, além de conteúdo exclusivo para jogadores de GTA Online.</p>
+
+                    <p class="mb-3">
+                        <s class="text-body-secondary small me-2">R$ 149,99</s>
+                        <span class="preco-novo fw-semibold fs-5">R$ 14,99</span>
+                    </p>
+
+                    <h4 class="titulo-sublinhado text-uppercase text-body-secondary fw-semibold fs-6 mb-2">
+                        Classificação indicativa: Livre</h4>
+
+                    <div class="d-flex flex-wrap align-items-center gap-2 mb-2">
+                        <img loading="lazy" decoding="async"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Classifica%C3%A7%C3%A3o_Indicativa_18_anos.svg/3840px-Classifica%C3%A7%C3%A3o_Indicativa_18_anos.svg.png"
+                            width="50" height="50" class="rounded-1" alt="Classificação 18 anos">
+                        <span class="small text-body-secondary">Drogas ilícitas, Nudez, Violência, Compras no jogo,
+                            Interatividade online</span>
+                    </div>
+                    <p class="small text-body-secondary mb-0">Classificação etária: Coordenação de Classificação
+                        Indicativa</p>
+                </div>
+            </article>
+
+            <!-- 2º -->
+            <article class="jogo row g-4 py-4 border-bottom border-secondary-subtle">
+                <div class="col-12 col-sm-auto">
+                    <a href="https://store.steampowered.com/app/268910/Cuphead/" target="_blank"
+                        class="capa-jogo d-block mx-auto mx-sm-0 rounded-3 overflow-hidden border border-secondary-subtle"
+                        rel="noopener noreferrer">
+                        <img loading="lazy" decoding="async"
+                            src="https://cdn.cloudflare.steamstatic.com/steam/apps/268910/library_600x900.jpg"
+                            class="img-fluid d-block" alt="Capa de Cuphead">
+                    </a>
+                </div>
+
+                <div class="col-12 col-sm">
+                    <h3 class="h4 mb-3">Cuphead</h3>
+
+                    <p class="texto-jogo text-body-secondary mb-3">Cuphead é um clássico jogo de ação do tipo "run and
+                        gun" com foco em batalhas contra chefes. Inspirado nos desenhos animados da década de 1930, os
+                        visuais e o áudio foram minuciosamente criados com as mesmas técnicas da época.</p>
+
+                    <p class="mb-3">
+                        <s class="text-body-secondary small me-2">R$ 39,99</s>
+                        <span class="preco-novo fw-semibold fs-5">R$ 3,99</span>
+                    </p>
+
+                    <h4 class="titulo-sublinhado text-uppercase text-body-secondary fw-semibold fs-6 mb-2">
+                        Classificação indicativa: Livre</h4>
+
+                    <div class="d-flex flex-wrap align-items-center gap-2 mb-2">
+                        <img loading="lazy" decoding="async"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Classifica%C3%A7%C3%A3o_Indicativa_10_anos.svg/500px-Classifica%C3%A7%C3%A3o_Indicativa_10_anos.svg.png"
+                            width="50" height="50" class="rounded-1" alt="Classificação 10 anos">
+                        <span class="small text-body-secondary">Violência Fantasiosa</span>
+                    </div>
+                    <p class="small text-body-secondary mb-0">Classificação etária: Coordenação de Classificação
+                        Indicativa</p>
+                </div>
+            </article>
+
+            <!-- 3º -->
+            <article class="jogo row g-4 py-4 border-bottom border-secondary-subtle">
+                <div class="col-12 col-sm-auto">
+                    <a href="https://store.steampowered.com/app/220/HalfLife_2/" target="_blank"
+                        class="capa-jogo d-block mx-auto mx-sm-0 rounded-3 overflow-hidden border border-secondary-subtle"
+                        rel="noopener noreferrer">
+                        <img loading="lazy" decoding="async"
+                            src="https://cdn.cloudflare.steamstatic.com/steam/apps/220/library_600x900.jpg"
+                            class="img-fluid d-block" alt="Capa de Half-Life II">
+                    </a>
+                </div>
+
+                <div class="col-12 col-sm">
+                    <h3 class="h4 mb-3">Half-Life II</h3>
+
+                    <p class="texto-jogo text-body-secondary mb-3">Despertado de um sono criogênico na metrópole ocupada
+                        da Cidade 17, Gordon Freeman se une a Alyx Vance para liderar uma desesperada resistência
+                        humana.</p>
+
+                    <p class="mb-3">
+                        <s class="text-body-secondary small me-2">R$ 32,99</s>
+                        <span class="preco-novo fw-semibold fs-5">R$ 3,29</span>
+                    </p>
+
+                    <div class="d-flex flex-wrap align-items-center gap-2 mb-2">
+                        <img loading="lazy" decoding="async"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Classifica%C3%A7%C3%A3o_Indicativa_14_anos.svg/3840px-Classifica%C3%A7%C3%A3o_Indicativa_14_anos.svg.png"
+                            width="50" height="50" class="rounded-1" alt="Classificação 14 anos">
+                        <span class="small text-body-secondary">Violência, Linguagem imprópria</span>
+                    </div>
+                    <p class="small text-body-secondary mb-0">Classificação etária: Coordenação de Classificação
+                        Indicativa</p>
+                </div>
+            </article>
+        </section>
+
+        <!-- Mercado -->
+        <section class="mt-5">
+            <h2 class="titulo-pixel mb-4">Outros jogos do nosso Mercado</h2>
+            <div class="table-responsive">
+                <table class="table tabela-pixely table-hover mb-0">
+                    <caption>Catálogo do Mercado Pixely</caption>
+                    <thead>
+                        <tr>
+                            <th>Jogo</th>
+                            <th>Gênero</th>
+                            <th>Desenvolvedora</th>
+                            <th>Preço Original</th>
+                            <th>Preço Atual</th>
+                            <th>Desconto</th>
+                            <th>Avaliação</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Silksong</td>
+                            <td>Metroidvania</td>
+                            <td>Team Cherry</td>
+                            <td>R$ 79,99</td>
+                            <td>R$ 79,99</td>
+                            <td>—</td>
+                            <td>96/100</td>
+                        </tr>
+                        <tr>
+                            <td>Dark Souls III</td>
+                            <td>RPG de Ação</td>
+                            <td>FromSoftware</td>
+                            <td>R$ 222,21</td>
+                            <td>R$ 199,99</td>
+                            <td>10% OFF</td>
+                            <td>89/100</td>
+                        </tr>
+                        <tr>
+                            <td>Cuphead</td>
+                            <td>Plataforma</td>
+                            <td>Studio MDHR</td>
+                            <td>R$ 43,31</td>
+                            <td>R$ 25,99</td>
+                            <td>40% OFF</td>
+                            <td>88/100</td>
+                        </tr>
+                        <tr>
+                            <td>Elden Ring</td>
+                            <td>RPG de Ação</td>
+                            <td>FromSoftware</td>
+                            <td>R$ 250,00</td>
+                            <td>R$ 100,00</td>
+                            <td>60% OFF</td>
+                            <td>98/100</td>
+                        </tr>
+                        <tr>
+                            <td>The Last of Us Parte II</td>
+                            <td>Aventura</td>
+                            <td>Naughty Dog</td>
+                            <td>R$ 219,52</td>
+                            <td>R$ 186,59</td>
+                            <td>15% OFF</td>
+                            <td>93/100</td>
+                        </tr>
+                        <tr>
+                            <td>GTA V</td>
+                            <td>Ação</td>
+                            <td>Rockstar Games</td>
+                            <td>R$ 206,33</td>
+                            <td>R$ 61,90</td>
+                            <td>70% OFF</td>
+                            <td>97/100</td>
+                        </tr>
+                        <tr>
+                            <td>Dead Cells</td>
+                            <td>Roguelike</td>
+                            <td>Motion Twin</td>
+                            <td>R$ 59,90</td>
+                            <td>R$ 59,90</td>
+                            <td>—</td>
+                            <td>91/100</td>
+                        </tr>
+                        <tr>
+                            <td>Hades II</td>
+                            <td>Roguelike</td>
+                            <td>Supergiant Games</td>
+                            <td>R$ 89,90</td>
+                            <td>R$ 62,93</td>
+                            <td>30% OFF</td>
+                            <td>95/100</td>
+                        </tr>
+                        <tr>
+                            <td>Vampire Survivors</td>
+                            <td>Roguelite</td>
+                            <td>poncle</td>
+                            <td>R$ 14,99</td>
+                            <td>R$ 7,49</td>
+                            <td>50% OFF</td>
+                            <td>90/100</td>
+                        </tr>
+                        <tr>
+                            <td>Hollow Knight</td>
+                            <td>Metroidvania</td>
+                            <td>Team Cherry</td>
+                            <td>R$ 29,99</td>
+                            <td>R$ 14,99</td>
+                            <td>50% OFF</td>
+                            <td>95/100</td>
+                        </tr>
+                        <tr>
+                            <td>Red Dead Redemption 2</td>
+                            <td>Aventura / Mundo Aberto</td>
+                            <td>Rockstar Games</td>
+                            <td>R$ 199,99</td>
+                            <td>R$ 79,99</td>
+                            <td>60% OFF</td>
+                            <td>97/100</td>
+                        </tr>
+                        <tr>
+                            <td>Baldur's Gate 3</td>
+                            <td>RPG</td>
+                            <td>Larian Studios</td>
+                            <td>R$ 299,99</td>
+                            <td>R$ 239,99</td>
+                            <td>20% OFF</td>
+                            <td>99/100</td>
+                        </tr>
+                        <tr>
+                            <td>Celeste</td>
+                            <td>Plataforma</td>
+                            <td>Maddy Makes Games</td>
+                            <td>R$ 49,99</td>
+                            <td>R$ 24,99</td>
+                            <td>50% OFF</td>
+                            <td>94/100</td>
+                        </tr>
+                        <tr>
+                            <td>Stardew Valley</td>
+                            <td>Simulação / RPG</td>
+                            <td>ConcernedApe</td>
+                            <td>R$ 37,99</td>
+                            <td>R$ 18,99</td>
+                            <td>50% OFF</td>
+                            <td>96/100</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Filtros -->
+        <section class="mt-5">
+            <h2 class="titulo-pixel mb-4">Filtrar Jogos</h2>
+            <form class="p-4 rounded-3 border border-secondary-subtle bg-body-tertiary">
+                <div class="row g-3 align-items-end">
+                    <div class="col-12 col-md-4">
+                        <label for="genero" class="form-label text-body-secondary fw-semibold small">Filtrar por
+                            gênero</label>
+                        <select id="genero" name="genero" class="form-select">
+                            <option value="">Todos</option>
+                            <option value="acao">Ação</option>
+                            <option value="rpg">RPG</option>
+                            <option value="fps">FPS</option>
+                            <option value="aventura">Aventura</option>
+                            <option value="roguelike">Roguelike</option>
+                            <option value="plataforma">Plataforma</option>
+                            <option value="simulacao">Simulação</option>
+                            <option value="estrategia">Estratégia</option>
+                        </select>
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        <label for="preco" class="form-label text-body-secondary fw-semibold small">Filtrar por
+                            preço</label>
+                        <select id="preco" name="preco" class="form-select">
+                            <option value="">Qualquer</option>
+                            <option value="30">Até R$ 30,00</option>
+                            <option value="60">Até R$ 60,00</option>
+                            <option value="100">Até R$ 100,00</option>
+                            <option value="200">Até R$ 200,00</option>
+                        </select>
+                    </div>
+
+                    <div class="col-12 col-md-2 d-flex align-items-center pt-3">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="desconto" name="desconto">
+                            <label class="form-check-label text-body-secondary fw-semibold small" for="desconto">
+                                Apenas com desconto
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-2">
+                        <button type="submit" class="btn btn-primary w-100 fw-semibold">Filtrar</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="rodape-pixely">
+        <div class="container-fluid px-4 px-lg-5 pt-5 pb-3">
+
+            <div class="row g-4">
+
+                <section class="col-6 col-md-3">
+                    <h2 class="h6 fonte-display titulo-sublinhado text-uppercase fw-bold mb-3">Links Úteis</h2>
+                    <ul class="list-unstyled small mb-0">
+                        <li class="mb-2"><a href="Termos_Politica.html#sobre"
+                                class="link-light link-opacity-75 link-opacity-100-hover link-underline-opacity-0">Sobre
+                                Nós</a></li>
+                        <li class="mb-2"><a href="Termos_Politica.html#servicos"
+                                class="link-light link-opacity-75 link-opacity-100-hover link-underline-opacity-0">Nossos
+                                Serviços</a></li>
+                        <li class="mb-2"><a href="Termos_Politica.html#privacidade"
+                                class="link-light link-opacity-75 link-opacity-100-hover link-underline-opacity-0">Política
+                                de Privacidade</a></li>
+                        <li class="mb-2"><a href="Termos_Politica.html#termos"
+                                class="link-light link-opacity-75 link-opacity-100-hover link-underline-opacity-0">Termos
+                                de Uso</a></li>
+                        <li class="mb-2"><a href="mailto:pixely@gmail.com"
+                                class="link-light link-opacity-75 link-opacity-100-hover link-underline-opacity-0">Contato</a>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="col-6 col-md-3">
+                    <h2 class="h6 fonte-display titulo-sublinhado text-uppercase fw-bold mb-3">Redes Sociais</h2>
+                    <ul class="list-unstyled small mb-0">
+                        <li class="mb-2">
+                            <a href="#"
+                                class="d-flex align-items-center gap-2 link-light link-opacity-75 link-opacity-100-hover link-underline-opacity-0">
+                                <i class="bi bi-facebook" aria-hidden="true"></i> Facebook
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#"
+                                class="d-flex align-items-center gap-2 link-light link-opacity-75 link-opacity-100-hover link-underline-opacity-0">
+                                <i class="bi bi-instagram" aria-hidden="true"></i> Instagram
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#"
+                                class="d-flex align-items-center gap-2 link-light link-opacity-75 link-opacity-100-hover link-underline-opacity-0">
+                                <i class="bi bi-linkedin" aria-hidden="true"></i> LinkedIn
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="col-6 col-md-3">
+                    <h2 class="h6 fonte-display titulo-sublinhado text-uppercase fw-bold mb-3">Outras Plataformas</h2>
+                    <ul class="list-unstyled small mb-0">
+                        <li class="mb-2">
+                            <a href="#"
+                                class="d-flex align-items-center gap-2 link-light link-opacity-75 link-opacity-100-hover link-underline-opacity-0">
+                                <i class="bi bi-youtube" aria-hidden="true"></i> YouTube
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#"
+                                class="d-flex align-items-center gap-2 link-light link-opacity-75 link-opacity-100-hover link-underline-opacity-0">
+                                <i class="bi bi-twitch" aria-hidden="true"></i> Twitch
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#"
+                                class="d-flex align-items-center gap-2 link-light link-opacity-75 link-opacity-100-hover link-underline-opacity-0">
+                                <i class="bi bi-discord" aria-hidden="true"></i> Discord
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#"
+                                class="d-flex align-items-center gap-2 link-light link-opacity-75 link-opacity-100-hover link-underline-opacity-0">
+                                <i class="bi bi-github" aria-hidden="true"></i> GitHub
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="col-6 col-md-3">
+                    <h2 class="h6 fonte-display titulo-sublinhado text-uppercase fw-bold mb-3">Contato</h2>
+                    <address class="small mb-0">
+                        <p class="mb-2">Email: <a href="mailto:pixely@gmail.com"
+                                class="link-light link-opacity-75 link-opacity-100-hover link-underline-opacity-0">pixely@gmail.com</a>
+                        </p>
+                        <p class="mb-0">Telefone: (00) 0000-0000</p>
+                    </address>
+                </section>
+
+            </div>
+
+            <hr class="border-secondary mt-5">
+            <p class="text-center small text-body-secondary mb-0">&copy; 2026 Pixely. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/pixely.js" defer></script>
+</body>
+
+</html>

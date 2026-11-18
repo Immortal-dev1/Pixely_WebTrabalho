@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-bs-theme="dark">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Pixely — Tela Principal">
+    <title>Pixely - Início</title>
+    <meta name="theme-color" content="#0e0e11">
+    <link rel="icon" href="img/site_icon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Press+Start+2P&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Global -->
+    <link rel="stylesheet" href="css/Funcionalidades_unicas.css">
+
+</head>
+
+<body style="--bg-pagina: url('https://cdn.cloudflare.steamstatic.com/steam/apps/1245620/library_hero.jpg')"
+    class="text-body d-flex flex-column min-vh-100"> <!-- background -->
+
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg nav-pixely px-3">
+            <div class="container-fluid">
+
+                <a class=" icone-rede d-flex align-items-center gap-2" href="TelaPrincipal.html">
+                    <img src="img/site_icon.png" alt="Ícone do Pixely" class="logo-pixely">
+                    <img src="img/text_icon.png" alt="Pixely" class="logo-pixely">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
+                    aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+
+                    <ul class="navbar-nav me-auto mt-3 mt-lg-0 ms-lg-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="TelaPrincipal.html" aria-current="page">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Noticias.html">Notícias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Explorar.html">Explorar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Eventos.html">Eventos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Perfil.html">Perfil</a>
+                        </li>
+                    </ul>
+
+                    <div class="d-flex align-items-center gap-3 my-3 my-lg-0">
+                        <form role="search" action="" method="get" class="flex-grow-1">
+                            <div class="input-group busca rounded-pill overflow-hidden">
+                                <span class="input-group-text"><i class="bi bi-search" aria-hidden="true"></i></span>
+                                <input class="form-control" type="search" name="pesquisa" placeholder="Navegar"
+                                    aria-label="Navegar">
+                            </div>
+                        </form>
+
+                        <div class="dropdown d-none d-lg-block">
+                            <a href="#" class="d-block" data-bs-toggle="dropdown" aria-expanded="false"
+                                aria-label="Menu do usuário">
+                                <img src="img/perfil.png" alt="" width="40" height="40"
+                                    class="icone-rede rounded-circle">
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end shadow">
+                                <li><a class="dropdown-item" href="Perfil.html"><i class="bi bi-person me-2"></i>Meu
+                                        perfil</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="Logar.html"><i
+                                            class="bi bi-box-arrow-right me-2"></i>Sair</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container conteudo flex-grow-1 py-5">
+
+        <h1 class="titulo-pixel border-start border-3 border-primary ps-3 mb-5">Início</h1>
+
+        <section class="mb-5">
+            <h2 class="titulo-pixel mb-4">Maiores Destaques Semanais</h2>
+
+            <!-- 1º -->
+            <article class="jogo row g-4 py-4 border-bottom border-secondary-subtle">
+                <div class="col-12 col-sm-auto">
+                    <a href="https://store.steampowered.com/app/1030300/Hollow_Knight_Silksong/" target="_blank"
+                        rel="noopener noreferrer"
+                        class="capa-jogo d-block mx-auto mx-sm-0 rounded-3 overflow-hidden border border-secondary-subtle">
+                        <img loading="lazy" decoding="async"
+                            src="https://cdn.cloudflare.steamstatic.com/steam/apps/1030300/library_600x900.jpg"
+                            class="img-fluid d-block" alt="Capa de Hollow Knight: Silksong">
+                    </a>
+                </div>
+
+                <div class="col-12 col-sm">
+                    <h3 class="h4 mb-3">Hollow Knight: Silksong</h3>
+                    <p class="texto-jogo text-body-secondary mb-3">Descubra um reino vasto e amaldiçoado em Hollow
+                        Knight: Silksong! Explore, lute e sobreviva enquanto você ascende ao pico de uma terra
+                        governada pela seda e por canções.</p>
+
+                    <p class="mb-3">
+                        <s class="text-body-secondary small me-2">R$ 59,99</s>
+                        <span class="preco-novo fw-semibold fs-5">R$ 44,99</span>
+                    </p>
+
+                    <h4 class="titulo-sublinhado text-uppercase text-body-secondary fw-semibold fs-6 mb-2">
+                        Classificação indicativa: Livre</h4>
+                    <div class="d-flex flex-wrap align-items-center gap-2 mb-2">
+                        <img loading="lazy" decoding="async"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/DJCTQ_-_L.svg/1280px-DJCTQ_-_L.svg.png"
+                            width="50" height="50" class="rounded-1" alt="Classificação Livre">
+                        <span class="small text-body-secondary">Violência Fantasiosa</span>
+                    </div>
+                    <p class="small text-body-secondary mb-0">Classificação etária: Coordenação de Classificação
+                        Indicativa</p>
+                </div>
+            </article>
+
+            <!-- 2º -->
+            <article class="jogo row g-4 py-4 border-bottom border-secondary-subtle">
+                <div class="col-12 col-sm-auto">
+                    <a href="https://store.steampowered.com/app/1245620/ELDEN_RING/" target="_blank"
+                        rel="noopener noreferrer"
+                        class="capa-jogo d-block mx-auto mx-sm-0 rounded-3 overflow-hidden border border-secondary-subtle">
+                        <img loading="lazy" decoding="async"
+                            src="https://cdn.cloudflare.steamstatic.com/steam/apps/1245620/library_600x900.jpg"
+                            class="img-fluid d-block" alt="Capa de Elden Ring">
+                    </a>
+                </div>
+
+                <div class="col-12 col-sm">
+                    <h3 class="h4 mb-3">Elden Ring</h3>
+                    <p class="texto-jogo text-body-secondary mb-3">O NOVO RPG DE AÇÃO E FANTASIA. Levante-se,
+                        Maculado, e seja guiado pela graça para portar o poder do Anel Prístino e se tornar um Lorde
+                        Prístino nas Terras Intermédias.</p>
+
+                    <p class="mb-3">
+                        <s class="text-body-secondary small me-2">R$ 365,99</s>
+                        <span class="preco-novo fw-semibold fs-5">R$ 204,99</span>
+                    </p>
+
+                    <h4 class="titulo-sublinhado text-uppercase text-body-secondary fw-semibold fs-6 mb-2">
+                        Classificação indicativa: 16 anos</h4>
+                    <div class="d-flex flex-wrap align-items-center gap-2 mb-2">
+                        <img loading="lazy" decoding="async"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Classifica%C3%A7%C3%A3o_Indicativa_16_anos.svg/500px-Classifica%C3%A7%C3%A3o_Indicativa_16_anos.svg.png"
+                            width="50" height="50" class="rounded-1" alt="Classificação: 16 anos">
+                        <span class="small text-body-secondary">Violência</span>
+                        <span class="small text-body-secondary">Compras Online</span>
+                    </div>
+                    <p class="small text-body-secondary mb-0">Classificação etária: Coordenação de Classificação
+                        Indicativa</p>
+                </div>
+            </article>
+
+            <!-- 3º -->
+            <article class="jogo row g-4 py-4 border-bottom border-secondary-subtle">
+                <div class="col-12 col-sm-auto">
+                    <a href="https://store.steampowered.com/app/1086940/Baldurs_Gate_3/" target="_blank"
+                        rel="noopener noreferrer"
+                        class="capa-jogo d-block mx-auto mx-sm-0 rounded-3 overflow-hidden border border-secondary-subtle">
+                        <img loading="lazy" decoding="async"
+                            src="https://cdn.cloudflare.steamstatic.com/steam/apps/1086940/library_600x900.jpg"
+                            class="img-fluid d-block" alt="Capa de Baldur's Gate 3">
+                    </a>
+                </div>
+
+                <div class="col-12 col-sm">
+                    <h3 class="h4 mb-3">Baldur’s Gate 3</h3>
+                    <p class="texto-jogo text-body-secondary mb-3">Baldur's Gate 3 é um RPG com foco na narrativa e em
+                        grupos de personagens, ambientado no universo de Dungeons &amp; Dragons, onde suas escolhas
+                        moldam uma história de companheirismo e traição, sobrevivência e sacrifício, e a tentação do
+                        poder absoluto.</p>
+
+                    <p class="mb-3">
+                        <s class="text-body-secondary small me-2">R$ 199,99</s>
+                        <span class="preco-novo fw-semibold fs-5">R$ 109,99</span>
+                    </p>
+
+                    <h4 class="titulo-sublinhado text-uppercase text-body-secondary fw-semibold fs-6 mb-2">
+                        Classificação indicativa: 16 anos</h4>
+                    <div class="d-flex flex-wrap align-items-center gap-2 mb-2">
+                        <img loading="lazy" decoding="async"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Classifica%C3%A7%C3%A3o_Indicativa_16_anos.svg/500px-Classifica%C3%A7%C3%A3o_Indicativa_16_anos.svg.png"
+                            width="50" height="50" class="rounded-1" alt="Classificação: 16 anos">
+                        <span class="small text-body-secondary">Violência Extrema</span>
+                        <span class="small text-body-secondary">Nudez</span>
+                        <span class="small text-body-secondary">Linguagem Imprópria</span>
+                    </div>
+                    <p class="small text-body-secondary mb-0">Classificação etária: Coordenação de Classificação
+                        Indicativa</p>
+                </div>
+            </article>
+
+            <!-- 4º -->
+            <article class="jogo row g-4 py-4 border-bottom border-secondary-subtle">
+                <div class="col-12 col-sm-auto">
+                    <a href="https://store.steampowered.com/app/1174180/Red_Dead_Redemption_2/" target="_blank"
+                        rel="noopener noreferrer"
+                        class="capa-jogo d-block mx-auto mx-sm-0 rounded-3 overflow-hidden border border-secondary-subtle">
+                        <img loading="lazy" decoding="async"
+                            src="https://cdn.cloudflare.steamstatic.com/steam/apps/1174180/library_600x900.jpg"
+                            class="img-fluid d-block" alt="Capa de Red Dead Redemption II">
+                    </a>
+                </div>
+
+                <div class="col-12 col-sm">
+                    <h3 class="h4 mb-3">Red Dead Redemption II</h3>
+                    <p class="texto-jogo text-body-secondary mb-3">Arthur Morgan e a gangue Van der Linde são forçados
+                        a fugir. Com agentes federais e caçadores de recompensas no seu encalço, a gangue precisa
+                        roubar, assaltar e lutar para sobreviver no impiedoso coração dos Estados Unidos.</p>
+
+                    <p class="mb-3">
+                        <s class="text-body-secondary small me-2">R$ 358,21</s>
+                        <span class="preco-novo fw-semibold fs-5">R$ 199,58</span>
+                    </p>
+
+                    <h4 class="titulo-sublinhado text-uppercase text-body-secondary fw-semibold fs-6 mb-2">
+                        Classificação indicativa: 18 anos</h4>
+                    <div class="d-flex flex-wrap align-items-center gap-2 mb-2">
+                        <img loading="lazy" decoding="async"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Classifica%C3%A7%C3%A3o_Indicativa_18_anos.svg/3840px-Classifica%C3%A7%C3%A3o_Indicativa_18_anos.svg.png"
+                            width="50" height="50" class="rounded-1" alt="Classificação: 18 anos">
+                        <span class="small text-body-secondary">Violência</span>
+                        <span class="small text-body-secondary">Atos criminosos</span>
+                        <span class="small text-body-secondary">Drogas ilícitas</span>
+                        <span class="small text-body-secondary">Linguagem Imprópria</span>
+                    </div>
+                    <p class="small text-body-secondary mb-0">Classificação etária: Coordenação de Classificação
+                        Indicativa</p>
+                </div>
+            </article>
+
+            <!-- 5º -->
+            <article class="jogo row g-4 py-4 border-bottom border-secondary-subtle">
+                <div class="col-12 col-sm-auto">
+                    <a href="https://store.steampowered.com/app/1145350/Hades_II/" target="_blank"
+                        rel="noopener noreferrer"
+                        class="capa-jogo d-block mx-auto mx-sm-0 rounded-3 overflow-hidden border border-secondary-subtle">
+                        <img loading="lazy" decoding="async"
+                            src="https://cdn.cloudflare.steamstatic.com/steam/apps/1145350/library_600x900.jpg"
+                            class="img-fluid d-block" alt="Capa de Hades II">
+                    </a>
+                </div>
+
+                <div class="col-12 col-sm">
+                    <h3 class="h4 mb-3">Hades II</h3>
+                    <p class="texto-jogo text-body-secondary mb-3">Transcenda o Submundo com feitiços das trevas para
+                        enfrentar o titã do tempo nesta sequência mágica do premiado roguelike de exploração de
+                        masmorras.</p>
+
+                    <p class="mb-3">
+                        <s class="text-body-secondary small me-2">R$ 88,99</s>
+                        <span class="preco-novo fw-semibold fs-5">R$ 20,99</span>
+                    </p>
+
+                    <h4 class="titulo-sublinhado text-uppercase text-body-secondary fw-semibold fs-6 mb-2">
+                        Classificação indicativa: 14 anos</h4>
+                    <div class="d-flex flex-wrap align-items-center gap-2 mb-2">
+                        <img loading="lazy" decoding="async"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Classifica%C3%A7%C3%A3o_Indicativa_14_anos.svg/3840px-Classifica%C3%A7%C3%A3o_Indicativa_14_anos.svg.png"
+                            width="50" height="50" class="rounded-1" alt="Classificação: 14 anos">
+                        <span class="small text-body-secondary">Violência</span>
+                        <span class="small text-body-secondary">Conteúdo sexual</span>
+                    </div>
+                    <p class="small text-body-secondary mb-0">Classificação etária: Coordenação de Classificação
+                        Indicativa</p>
+                </div>
+            </article>
+
+            <!-- 6º -->
+            <article class="jogo row g-4 py-4 border-bottom border-secondary-subtle">
+                <div class="col-12 col-sm-auto">
+                    <a href="https://store.steampowered.com/app/413150/Stardew_Valley/" target="_blank"
+                        rel="noopener noreferrer"
+                        class="capa-jogo d-block mx-auto mx-sm-0 rounded-3 overflow-hidden border border-secondary-subtle">
+                        <img loading="lazy" decoding="async"
+                            src="https://cdn.cloudflare.steamstatic.com/steam/apps/413150/library_600x900.jpg"
+                            class="img-fluid d-block" alt="Capa de Stardew Valley">
+                    </a>
+                </div>
+
+                <div class="col-12 col-sm">
+                    <h3 class="h4 mb-3">Stardew Valley</h3>
+                    <p class="texto-jogo text-body-secondary mb-3">Você herdou a antiga fazenda do seu avô em Stardew
+                        Valley. Munido de ferramentas herdadas e algumas moedas, você parte para começar sua nova
+                        vida. Será que você conseguirá aprender a viver da terra e transformar esses campos
+                        abandonados em um lar próspero? Não será fácil.</p>
+
+                    <p class="mb-3">
+                        <s class="text-body-secondary small me-2">R$ 24,99</s>
+                        <span class="preco-novo fw-semibold fs-5">R$ 5,00</span>
+                    </p>
+
+                    <h4 class="titulo-sublinhado text-uppercase text-body-secondary fw-semibold fs-6 mb-2">
+                        Classificação indicativa: 12 anos</h4>
+                    <div class="d-flex flex-wrap align-items-center gap-2 mb-2">
+                        <img loading="lazy" decoding="async"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Classifica%C3%A7%C3%A3o_Indicativa_12_anos.svg/1280px-Classifica%C3%A7%C3%A3o_Indicativa_12_anos.svg.png"
+                            width="50" height="50" class="rounded-1" alt="Classificação: 12 anos">
+                        <span class="small text-body-secondary">Violência fantasiosa</span>
+                        <span class="small text-body-secondary">Violência</span>
+                        <span class="small text-body-secondary">Drogas ilícitas</span>
+                    </div>
+                    <p class="small text-body-secondary mb-0">Classificação etária: Coordenação de Classificação
+                        Indicativa</p>
+                </div>
+            </article>
+
+            <!-- 7º -->
+            <article class="jogo row g-4 py-4 border-bottom border-secondary-subtle">
+                <div class="col-12 col-sm-auto">
+                    <a href="https://store.steampowered.com/app/292030/The_Witcher_3_Wild_Hunt/" target="_blank"
+                        rel="noopener noreferrer"
+                        class="capa-jogo d-block mx-auto mx-sm-0 rounded-3 overflow-hidden border border-secondary-subtle">
+                        <img loading="lazy" decoding="async"
+                            src="https://cdn.cloudflare.steamstatic.com/steam/apps/292030/library_600x900.jpg"
+                            class="img-fluid d-block" alt="Capa de The Witcher 3: Wild Hunt">
+                    </a>
+                </div>
+
+                <div class="col-12 col-sm">
+                    <h3 class="h4 mb-3">The Witcher 3: Wild Hunt</h3>
+                    <p class="texto-jogo text-body-secondary mb-3">Você é Geralt de Rívia, mercenário matador de
+                        monstros. Sua tarefa é encontrar Ciri, a Criança da Profecia — uma arma viva que pode alterar a
+                        forma do mundo.</p>
+
+                    <p class="mb-3">
+                        <s class="text-body-secondary small me-2">R$ 129,99</s>
+                        <span class="preco-novo fw-semibold fs-5">R$ 12,99</span>
+                    </p>
+
+                    <h4 class="titulo-sublinhado text-uppercase text-body-secondary fw-semibold fs-6 mb-2">
+                        Classificação indicativa: 16 anos</h4>
+                    <div class="d-flex flex-wrap align-items-center gap-2 mb-2">
+                        <img loading="lazy" decoding="async"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Classifica%C3%A7%C3%A3o_Indicativa_16_anos.svg/500px-Classifica%C3%A7%C3%A3o_Indicativa_16_anos.svg.png"
+                            width="50" height="50" class="rounded-1" alt="Classificação: 16 anos">
+                        <span class="small text-body-secondary">Conteúdo Sexual</span>
+                        <span class="small text-body-secondary">Violência</span>
+                        <span class="small text-body-secondary">Drogas Lícitas</span>
+                    </div>
+                    <p class="small text-body-secondary mb-0">Classificação etária: Coordenação de Classificação
+                        Indicativa</p>
+                </div>
+            </article>
+        </section>
+
+        <section class="mb-5">
+            <h2 class="titulo-pixel mb-4">Os 10 Jogos mais Jogados da Semana</h2>
+
+            <div class="table-responsive rounded-3 border border-secondary-subtle">
+                <table class="table tabela-pixely table-hover caption-top mb-0">
+                    <caption class="px-3 py-3">Atualizado em 14/06/2026</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col" class="px-3 py-3">Posição</th>
+                            <th scope="col" class="px-3 py-3">Jogo</th>
+                            <th scope="col" class="px-3 py-3">Pessoas Jogando</th>
+                            <th scope="col" class="px-3 py-3">Avaliação</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="ouro">
+                            <td class="px-3 py-3">1°</td>
+                            <td class="px-3 py-3">GTA V</td>
+                            <td class="px-3 py-3">285k</td>
+                            <td class="px-3 py-3">98/100</td>
+                        </tr>
+                        <tr class="prata">
+                            <td class="px-3 py-3">2°</td>
+                            <td class="px-3 py-3">Hollow Knight: Silksong</td>
+                            <td class="px-3 py-3">172k</td>
+                            <td class="px-3 py-3">89/100</td>
+                        </tr>
+                        <tr class="bronze">
+                            <td class="px-3 py-3">3°</td>
+                            <td class="px-3 py-3">Elden Ring</td>
+                            <td class="px-3 py-3">154k</td>
+                            <td class="px-3 py-3">96/100</td>
+                        </tr>
+                        <tr>
+                            <td class="px-3 py-3">4°</td>
+                            <td class="px-3 py-3">Baldur's Gate 3</td>
+                            <td class="px-3 py-3">141k</td>
+                            <td class="px-3 py-3">96/100</td>
+                        </tr>
+                        <tr>
+                            <td class="px-3 py-3">5°</td>
+                            <td class="px-3 py-3">Red Dead Redemption 2</td>
+                            <td class="px-3 py-3">139k</td>
+                            <td class="px-3 py-3">97/100</td>
+                        </tr>
+                        <tr>
+                            <td class="px-3 py-3">6°</td>
+                            <td class="px-3 py-3">Black Myth: Wukong</td>
+                            <td class="px-3 py-3">123k</td>
+                            <td class="px-3 py-3">94/100</td>
+                        </tr>
+                        <tr>
+                            <td class="px-3 py-3">7°</td>
+                            <td class="px-3 py-3">The Witcher 3: Wild Hunt</td>
+                            <td class="px-3 py-3">118k</td>
+                            <td class="px-3 py-3">94/100</td>
+                        </tr>
+                        <tr>
+                            <td class="px-3 py-3">8°</td>
+                            <td class="px-3 py-3">Cyberpunk 2077</td>
+                            <td class="px-3 py-3">92k</td>
+                            <td class="px-3 py-3">89/100</td>
+                        </tr>
+                        <tr>
+                            <td class="px-3 py-3">9°</td>
+                            <td class="px-3 py-3">GTA V</td>
+                            <td class="px-3 py-3">88k</td>
+                            <td class="px-3 py-3">97/100</td>
+                        </tr>
+                        <tr>
+                            <td class="px-3 py-3">10°</td>
+                            <td class="px-3 py-3">Dead Cells</td>
+                            <td class="px-3 py-3">85k</td>
+                            <td class="px-3 py-3">91/100</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+
+        <div class="row g-5">
+
+            <aside class="col-12 col-lg-6">
+                <h2 class="titulo-pixel mb-4">Notícias Recentes</h2>
+
+                <article class="pb-4 mb-4 border-bottom border-secondary-subtle">
+                    <p class="text-primary fw-semibold small mb-1">Destaque</p>
+                    <h3 class="h5 mb-2">
+                        <a href="Noticias.html" class="link-noticia text-reset text-decoration-none">Rockstar adia GTA
+                            VI pela terceira vez</a>
+                    </h3>
+                    <p class="text-body-secondary mb-0">O jogo agora chega em 19 de novembro de 2026, exclusivo para
+                        PS5 e Xbox Series X|S — sem versão para PC confirmada até o momento.</p>
+                    <time datetime="2026-07-01" class="d-block small text-body-secondary mt-2">01 de julho,
+                        2026</time>
+                </article>
+
+                <ul class="list-unstyled mb-3">
+                    <li class="py-3 border-bottom border-secondary-subtle">
+                        <p class="small text-body-secondary mb-1">Rumor - <time datetime="2026-07-01">01/07</time></p>
+                        <h3 class="fs-6 fw-semibold mb-0">
+                            <a href="Noticias.html" class="link-noticia text-reset text-decoration-none">Metroid
+                                Ravenous pode ter vazado para o Switch 2</a>
+                        </h3>
+                    </li>
+
+                    <li class="py-3 border-bottom border-secondary-subtle">
+                        <p class="small text-body-secondary mb-1">Hardware - <time datetime="2026-06-25">25/06</time>
+                        </p>
+                        <h3 class="fs-6 fw-semibold mb-0">
+                            <a href="Noticias.html" class="link-noticia text-reset text-decoration-none">Steam Deck 2
+                                segue em desenvolvimento, diz Valve</a>
+                        </h3>
+                    </li>
+
+                    <li class="py-3 border-bottom border-secondary-subtle">
+                        <p class="small text-body-secondary mb-1">Terror - <time datetime="2026-06-18">18/06</time>
+                        </p>
+                        <h3 class="fs-6 fw-semibold mb-0">
+                            <a href="Noticias.html" class="link-noticia text-reset text-decoration-none">Resident Evil
+                                Requiem já soma 7 milhões de cópias vendidas</a>
+                        </h3>
+                    </li>
+
+                    <li class="py-3 border-bottom border-secondary-subtle">
+                        <p class="small text-body-secondary mb-1">Ação/RPG - <time datetime="2026-06-12">Nintendo
+                                Direct</time></p>
+                        <h3 class="fs-6 fw-semibold mb-0">
+                            <a href="Noticias.html" class="link-noticia text-reset text-decoration-none">FromSoftware
+                                confirma The Duskbloods como exclusivo do Switch 2</a>
+                        </h3>
+                    </li>
+
+                    <li class="py-3">
+                        <p class="small text-body-secondary mb-1">Recorde - <time datetime="2026-05-18">Maio/2026</time>
+                        </p>
+                        <h3 class="fs-6 fw-semibold mb-0">
+                            <a href="Noticias.html" class="link-noticia text-reset text-decoration-none">Minecraft
+                                ultrapassa 350 milhões de cópias vendidas</a>
+                        </h3>
+                    </li>
+                </ul>
+
+                <a href="Noticias.html" class="link-noticia text-reset small">Ver todas as notícias »</a>
+            </aside>
+
+            <section class="col-12 col-lg-6">
+                <h2 class="titulo-pixel mb-4">Eventos Futuros</h2>
+
+                <div class="table-responsive rounded-3 border border-secondary-subtle mb-2">
+                    <table class="table tabela-pixely table-hover mb-0">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="px-3 py-3">Evento</th>
+                                <th scope="col" class="px-3 py-3">Data</th>
+                                <th scope="col" class="px-3 py-3">Tipo</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="px-3 py-3">Summer Game Fest 2026</td>
+                                <td class="px-3 py-3">Junho/2026</td>
+                                <td class="px-3 py-3">Anúncios / Trailers</td>
+                            </tr>
+                            <tr>
+                                <td class="px-3 py-3">Gamescom 2026</td>
+                                <td class="px-3 py-3">Agosto/2026</td>
+                                <td class="px-3 py-3">Feira Presencial</td>
+                            </tr>
+                            <tr>
+                                <td class="px-3 py-3">Brasil Game Show 2026</td>
+                                <td class="px-3 py-3">Outubro/2026</td>
+                                <td class="px-3 py-3">Feira Presencial</td>
+                            </tr>
+                            <tr>
+                                <td class="px-3 py-3">The Game Awards 2026</td>
+                                <td class="px-3 py-3">Dezembro/2026</td>
+                                <td class="px-3 py-3">Premiação</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <a href="Eventos.html" class="link-noticia text-reset small">Ver todos os eventos »</a>
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="rodape-pixely">
+        <div class="container-fluid px-4 px-lg-5 pt-5 pb-3">
+
+            <div class="row g-4">
+
+                <section class="col-6 col-md-3">
+                    <h2 class="h6 fonte-display titulo-sublinhado text-uppercase fw-bold mb-3">Links Úteis</h2>
+                    <ul class="list-unstyled small mb-0">
+                        <li class="mb-2"><a href="Termos_Politica.html#sobre"
+                                class="link-light link-opacity-75 link-opacity-100-hover link-underline-opacity-0">Sobre
+                                Nós</a></li>
+                        <li class="mb-2"><a href="Termos_Politica.html#servicos"
+                                class="link-light link-opacity-75 link-opacity-100-hover link-underline-opacity-0">Nossos
+                                Serviços</a></li>
+                        <li class="mb-2"><a href="Termos_Politica.html#privacidade"
+                                class="link-light link-opacity-75 link-opacity-100-hover link-underline-opacity-0">Política
+                                de Privacidade</a></li>
+                        <li class="mb-2"><a href="Termos_Politica.html#termos"
+                                class="link-light link-opacity-75 link-opacity-100-hover link-underline-opacity-0">Termos
+                                de Uso</a></li>
+                        <li class="mb-2"><a href="mailto:pixely@gmail.com"
+                                class="link-light link-opacity-75 link-opacity-100-hover link-underline-opacity-0">Contato</a>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="col-6 col-md-3">
+                    <h2 class="h6 fonte-display titulo-sublinhado text-uppercase fw-bold mb-3">Redes Sociais</h2>
+                    <ul class="list-unstyled small mb-0">
+                        <li class="mb-2">
+                            <a href="#"
+                                class="d-flex align-items-center gap-2 link-light link-opacity-75 link-opacity-100-hover link-underline-opacity-0">
+                                <i class="bi bi-facebook" aria-hidden="true"></i> Facebook
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#"
+                                class="d-flex align-items-center gap-2 link-light link-opacity-75 link-opacity-100-hover link-underline-opacity-0">
+                                <i class="bi bi-instagram" aria-hidden="true"></i> Instagram
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#"
+                                class="d-flex align-items-center gap-2 link-light link-opacity-75 link-opacity-100-hover link-underline-opacity-0">
+                                <i class="bi bi-linkedin" aria-hidden="true"></i> LinkedIn
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="col-6 col-md-3">
+                    <h2 class="h6 fonte-display titulo-sublinhado text-uppercase fw-bold mb-3">Outras Plataformas</h2>
+                    <ul class="list-unstyled small mb-0">
+                        <li class="mb-2">
+                            <a href="#"
+                                class="d-flex align-items-center gap-2 link-light link-opacity-75 link-opacity-100-hover link-underline-opacity-0">
+                                <i class="bi bi-youtube" aria-hidden="true"></i> YouTube
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#"
+                                class="d-flex align-items-center gap-2 link-light link-opacity-75 link-opacity-100-hover link-underline-opacity-0">
+                                <i class="bi bi-twitch" aria-hidden="true"></i> Twitch
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#"
+                                class="d-flex align-items-center gap-2 link-light link-opacity-75 link-opacity-100-hover link-underline-opacity-0">
+                                <i class="bi bi-discord" aria-hidden="true"></i> Discord
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#"
+                                class="d-flex align-items-center gap-2 link-light link-opacity-75 link-opacity-100-hover link-underline-opacity-0">
+                                <i class="bi bi-github" aria-hidden="true"></i> GitHub
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="col-6 col-md-3">
+                    <h2 class="h6 fonte-display titulo-sublinhado text-uppercase fw-bold mb-3">Contato</h2>
+                    <address class="small mb-0">
+                        <p class="mb-2">Email: <a href="mailto:pixely@gmail.com"
+                                class="link-light link-opacity-75 link-opacity-100-hover link-underline-opacity-0">pixely@gmail.com</a>
+                        </p>
+                        <p class="mb-0">Telefone: (00) 0000-0000</p>
+                    </address>
+                </section>
+
+            </div>
+
+            <hr class="border-secondary mt-5">
+            <p class="text-center small text-body-secondary mb-0">&copy; 2026 Pixely. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/pixely.js" defer></script>
+</body>
+
+</html>
